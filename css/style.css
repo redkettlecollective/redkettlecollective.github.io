@@ -3,13 +3,18 @@
   src: url('../Mission Gothic Thin.otf'); 
 }
 
+@font-face {
+  font-family: 'missionGothicThin-italic';
+  src: url('../Mission Gothic Thin Italic.otf'); 
+}
+
+
 body{
   background: black;
   margin: 0;
   text-align: center;
   font-family: 'missionGothicThin';
-  letter-spacing: 5px;
-
+  letter-spacing: 3px;
   color: white;
 }
 
@@ -19,6 +24,10 @@ body{
   width: 85%;
   max-width: 600px;
   margin: 0 auto;
+}
+
+.header{
+  font-family: 'missionGothicThin-italic';
 }
 
 html, body {
