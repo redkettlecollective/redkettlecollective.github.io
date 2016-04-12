@@ -1,0 +1,85 @@
+body{
+  background: black;
+  margin: 0;
+  text-align: center;
+  font-family: 'Helvetica Neue';
+  letter-spacing: 5px;
+
+  color: white;
+}
+
+.content{
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.header{
+
+}
+
+
+#muteButton{
+  position: fixed;
+  bottom: 8px;
+  cursor: pointer;
+  right: 8px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+#main_vid{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover; 
+  opacity: 0.5;
+}
+
+.title *{
+  color: white;
+  font-size: 25pt;
+  font-family: 'Helvetica Neue';
+  font-weight: 400;
+  letter-spacing: 15px;
+}
+
+.title {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.contentItem{
+  text-align: left;
+  background: rgba(0,0,0,0.4);
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid white;
+}
+
+a,a * {
+  text-decoration: none;
+  color: white;
+}
+a * {
+  transition: .5s;
+}
+a div:hover{
+  transform: translateY(-4px);
+  background: #000;
+}
+
+
+.eventItem p{
+  text-shadow: 0px 5px rgb(0,0,0,0.7);
+}

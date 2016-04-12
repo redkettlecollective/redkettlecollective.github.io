@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+  </title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <video id="main_vid" class="promo" autoplay muted>
+    <source src="media/promo.mp4">
+  </video>
+  <div id="muteButton">
+    MUTE
+  </div>
+  <div class="title">
+    <h1>THE</h1>
+    <h1>RED KETTLE</h1>
+    <h1>COLLECTIVE</h1>
+  </div>
+  <div class="content">
+    <p class="header">UPCOMING:</p>
+    <div class="contentItem">
+      <p>Friday, April 8</p>
+      <p>with White Woods</p>
+      <p>Temple Bar & Grill</p>
+      <p>Rochester, NY</p>
+    </div>
+    <a href="https://www.facebook.com/events/1683453031942976/"><div class="contentItem">
+      <p>CD Release Party with</p>
+      <p>The Buddhahood</p>
+      <p>Friday, April 22 at 9 PM.</p>
+      <p>The Firehouse Saloon</p>
+      <p>Rochester, NY</p>
+    </div></a>
+    <p class="header">LINKS:</p>
+    <a href=""><div class="contentItem">
+      <p>Bandcamp</p>
+    </div></a>
+    <a href=""><div class="contentItem">
+      <p>Spotify</p>
+    </div></a>
+    <a href=""><div class="contentItem">
+      <p>Facebook</p>
+    </div></a>
+  </div>
+  <script>
+    var video = document.getElementById('main_vid');
+    document.getElementById('muteButton').addEventListener('click',function(){
+      video.muted = !video.muted;
+      this.innerHTML = video.muted ? 'UNMUTE' : 'MUTE'
+    })
+  </script>
+</body>
+</html>
