@@ -60,11 +60,20 @@
   </div>
   </div>
   <script>
+    //mute button
     var video = document.getElementById('main_vid');
     document.getElementById('muteButton').addEventListener('click',function(){
       video.muted = !video.muted;
       this.innerHTML = video.muted ? 'UNMUTE' : 'MUTE'
     })
+
+    //changes button color when video is over
+    setTimeout(function(){
+      Array.prototype.forEach.call(document.getElementsByClassName('contentItem'),
+      function(item){
+        item.className+=' red'
+      })
+    },54000)
   </script>
 </body>
 </html>
