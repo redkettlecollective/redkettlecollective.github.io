@@ -10,8 +10,10 @@
 </head>
 <body>
 <div>
-  <video id="main_vid" class="promo" autoplay>
-    <source src="media/promo.mov">
+  <video id="main_vid" autobuffer class="promo" autoplay>
+    <source src="media/promo.mp4" type="video/mp4">
+    <source src="media/promo.webm" type="video/webm">
+
   </video>
   <div id="muteButton">
     MUTE
@@ -62,6 +64,8 @@
   <script>
     //mute button
     var video = document.getElementById('main_vid');
+    video.play();
+
     document.getElementById('muteButton').addEventListener('click',function(){
       video.muted = !video.muted;
       this.innerHTML = video.muted ? 'UNMUTE' : 'MUTE'
