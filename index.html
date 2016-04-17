@@ -64,7 +64,11 @@
   <script>
     //mute button
     var video = document.getElementById('main_vid');
-    video.play();
+    
+    //makes video autoplay for android
+    setTimeout(function(){
+      video.play();
+    },1000);
 
     document.getElementById('muteButton').addEventListener('click',function(){
       video.muted = !video.muted;
